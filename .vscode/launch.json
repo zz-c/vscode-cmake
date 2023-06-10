@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ctest",
+            "type":"cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/build/myproject.exe",
+            "cwd":"${workspaceRoot}",
+            "args": [],
+            "preLaunchTask": "Build",
+        }
+    ]
+}
