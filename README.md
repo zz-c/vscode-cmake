@@ -50,7 +50,7 @@ tasks.json:
 	},
 	"tasks": [
 		{
-			"label": "cmake",
+			"label": "CmakeTask",
 			"type": "shell",
 			"command": "cmake",
 			"args": [
@@ -58,7 +58,7 @@ tasks.json:
 			]
 		},
 		{
-			"label": "make",
+			"label": "MakeTask",
 			"group": {
 				"kind": "build",
 				"isDefault": true
@@ -67,10 +67,10 @@ tasks.json:
 			"args": []
 		},
 		{
-			"label": "Build",
+			"label": "BuildTask",
 			"dependsOn":[
-				"cmake",
-				"make"
+				"CmakeTask",
+				"MakeTask"
 			]
 		}
 	]
@@ -86,7 +86,7 @@ launch.json:
             "program": "${workspaceRoot}/build/myproject.exe",
             "cwd":"${workspaceRoot}",
             "args": [],
-            "preLaunchTask": "Build",
+            "preLaunchTask": "BuildTask",
         }
     ]
 }

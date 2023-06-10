@@ -5,10 +5,10 @@
             "name": "ctest",
             "type":"cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/build/myproject.exe",
+            "program": "${workspaceRoot}/build/swap/swap.exe",
             "cwd":"${workspaceRoot}",
             "args": [],
-            "preLaunchTask": "Build",
+            "preLaunchTask": "BuildTask",
         }
     ]
 }
