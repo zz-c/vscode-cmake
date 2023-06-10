@@ -1,6 +1,7 @@
 #include<iostream>
 #include "swap.h"
 #include "sdemo.h"
+#include "ddemo.h"
 
 using namespace std;
 
@@ -19,6 +20,7 @@ int main(int argc, char **argv){
     cout << "val2=" << val2 << endl;    
 
     sdemoTest();
-    //getchar();
+    ddemoTest();
+    getchar();
     return 0;
 }
